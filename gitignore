@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+saved_models/
+.streamlit/secrets.toml
+*.h5
+*.pt
+*.bin
