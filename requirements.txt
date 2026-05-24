@@ -1,9 +1,0 @@
-streamlit
-google-generativeai
-scikit-learn
-joblib
-numpy
-pandas
-matplotlib
-seaborn
-python-dotenv
