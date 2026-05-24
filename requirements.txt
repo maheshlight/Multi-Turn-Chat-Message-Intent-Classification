@@ -10,16 +10,19 @@ joblib==1.3.2
 numpy==1.24.3
 pandas==2.0.3
 
-# ── SpaCy (text preprocessing) ───────────────────────────────
-spacy==3.7.4
-# After installing, download the model with:
-#   python -m spacy download en_core_web_sm
-
-# ── Deep Learning (BERT) ─────────────────────────────────────
-torch==2.1.2
-transformers==4.39.3
-accelerate==0.28.0
-
 # ── Visualization ────────────────────────────────────────────
 matplotlib==3.7.5
 seaborn==0.13.2
+
+# ── Utilities ────────────────────────────────────────────────
+python-dotenv==1.0.1
+
+# ── NOTE ─────────────────────────────────────────────────────
+# torch, transformers, accelerate, and spacy are intentionally
+# excluded here — they exceed Streamlit Cloud's install limits.
+# app.py already has graceful fallbacks for all three:
+#   • spacy  → simple whitespace tokenizer fallback
+#   • BERT   → not loaded if saved_models/ is absent
+# To use BERT or spaCy locally, install them separately:
+#   pip install spacy torch transformers accelerate
+#   python -m spacy download en_core_web_sm
