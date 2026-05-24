@@ -1,28 +1,9 @@
-# ── Web app ──────────────────────────────────────────────────
 streamlit
-
-# ── Anthropic Claude API ─────────────────────────────────────
-anthropic
-
-# ── ML / NLP ─────────────────────────────────────────────────
+google-generativeai
 scikit-learn
 joblib
 numpy
 pandas
-
-# ── Visualization ────────────────────────────────────────────
 matplotlib
 seaborn
-
-# ── Utilities ────────────────────────────────────────────────
 python-dotenv
-
-# ── NOTE ─────────────────────────────────────────────────────
-# torch, transformers, accelerate, and spacy are intentionally
-# excluded here — they exceed Streamlit Cloud's install limits.
-# app.py already has graceful fallbacks for all three:
-#   • spacy  → simple whitespace tokenizer fallback
-#   • BERT   → not loaded if saved_models/ is absent
-# To use BERT or spaCy locally, install them separately:
-#   pip install spacy torch transformers accelerate
-#   python -m spacy download en_core_web_sm
