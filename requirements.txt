@@ -1,21 +1,21 @@
 # ── Web app ──────────────────────────────────────────────────
-streamlit==1.35.0
+streamlit
 
 # ── Anthropic Claude API ─────────────────────────────────────
-anthropic==0.28.0
+anthropic
 
 # ── ML / NLP ─────────────────────────────────────────────────
-scikit-learn==1.3.2
-joblib==1.3.2
-numpy==1.24.3
-pandas==2.0.3
+scikit-learn
+joblib
+numpy
+pandas
 
 # ── Visualization ────────────────────────────────────────────
-matplotlib==3.7.5
-seaborn==0.13.2
+matplotlib
+seaborn
 
 # ── Utilities ────────────────────────────────────────────────
-python-dotenv==1.0.1
+python-dotenv
 
 # ── NOTE ─────────────────────────────────────────────────────
 # torch, transformers, accelerate, and spacy are intentionally
