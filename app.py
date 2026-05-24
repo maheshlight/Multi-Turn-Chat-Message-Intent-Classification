@@ -109,7 +109,7 @@ def get_gemini_model():
     if not api_key:
         api_key = st.secrets.get("GEMINI_API_KEY", "")
     genai.configure(api_key=api_key)
-    return genai.GenerativeModel("gemini-1.5-flash")
+    return genai.GenerativeModel("gemini-2.0-flash")
 
 gemini_model = get_gemini_model()
 
